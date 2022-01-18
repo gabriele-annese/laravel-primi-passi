@@ -7,8 +7,22 @@
     <title>Document</title>
 </head>
 <body>
-    <h1>
-        salve
-    </h1>
+    <header>
+        <a href="/">
+            logo
+        </a>
+        <ul>
+            <li>
+                <a href="/about">About</a>
+            </li>
+            <li>
+                <a href="/news">News</a>
+            </li>
+        </ul>
+    </header>
+     <main>
+         <h1>{{ $title }}</h1>
+         <p>{{ $paragraph }}</p>
+     </main>
 </body>
 </html>

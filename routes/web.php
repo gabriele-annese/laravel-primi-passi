@@ -14,10 +14,23 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return 'hello world';
+    return view('homepage', [
+        'title' => 'Welcome Laravel',
+        'paragraph' => 'lore ipsum...'
+    ]);
 });
 
 Route::get('/about', function () {
-    return 'about ';
+    return view('about', [
+        'title' => 'About',
+        'paragraph' => 'lore ipsum...'
+    ]);
+});
+
+Route::get('/news', function () {
+    return view('news', [
+        'title' => 'News',
+        'paragraph' => 'lore ipsum...'
+    ]);
 });
 
